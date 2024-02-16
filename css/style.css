@@ -48,14 +48,14 @@ body.menu-show {
 }
 
 a {
-  color: #3f963c;
+  color: #e1aa72;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover {
   text-decoration: underline;
-  color: #3f963c;
+  color: #e1aa72;
 }
 a:focus,
 a:active {
@@ -261,7 +261,7 @@ h6 {
   text-decoration: none;
 }
 #colorlib-main-nav ul li.active a {
-  color: #3f963c;
+  color: #e1aa72;
 }
 #colorlib-main-nav .form-group {
   margin-bottom: 40px;
@@ -305,7 +305,7 @@ h6 {
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0;
-  background: #3f963c;
+  background: #e1aa72;
   color: #fff;
   border: none;
   padding: 16px;
@@ -1251,9 +1251,9 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 }
 
 .btn-primary {
-  background: #3f963c;
+  background: #e1aa72;
   color: #fff;
-  border: 2px solid #3f963c;
+  border: 2px solid #e1aa72;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -1269,7 +1269,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 .btn-primary.btn-outline:hover,
 .btn-primary.btn-outline:focus,
 .btn-primary.btn-outline:active {
-  background: #3f963c;
+  background: #e1aa72;
   color: #fff;
 }
 
@@ -1574,7 +1574,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   color: rgba(0, 0, 0, 0.5);
 }
 .contact-info li a {
-  color: #3f963c;
+  color: #e1aa72;
 }
 
 .heading {
@@ -1619,7 +1619,7 @@ input[type="text"] {
 
 .colorlib-social-icons i {
   font-size: 24px;
-  color: #3f963c;
+  color: #e1aa72;
   margin-right: 10px;
 }
 
@@ -1643,7 +1643,7 @@ input[type="text"] {
 }
 #footer p.colorlib-social-icons i {
   font-size: 24px;
-  color: #3f963c;
+  color: #e1aa72;
 }
 #footer p .block {
   color: #1a1a1a;
@@ -1685,7 +1685,7 @@ input[type="text"] {
 .js .animate-box {
   opacity: 0;
 }
-@media only screen (max-device-width: 1024px) {
+@media only screen (max-device-width: 2000px) {
   .head-spline {
     display: none !important;
   }
