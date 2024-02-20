@@ -145,23 +145,23 @@
 								<div class="row">
 									<div class="col-md-12">
 										<div class="form-group">
-											<textarea name="" class="form-control" id="" cols="30" rows="7"
-												placeholder="Message"></textarea>
+											<textarea name="message" class="form-control" id="message" cols="30" rows="7" placeholder="Message"></textarea>
+
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Name">
+											<input type="text" class="form-control" id = "name" placeholder="From">
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Email">
+											<input type="text" class="form-control" id = "email" placeholder="Your Email">
 										</div>
 									</div>
 									<div class="col-md-12">
 										<div class="form-group">
-											<input type="submit" value="Send Message" class="btn btn-primary">
+											<input type="submit" value="Send Message" class="btn btn-primary" onclick="sendEmail()">
 										</div>
 									</div>
 								</div>
@@ -228,6 +228,38 @@
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
+
+	<!-- Include EmailJS SDK -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+<!-- Initialize EmailJS and define sendEmail function -->
+<script type="text/javascript">
+  (function(){
+    emailjs.init("hKJXsxDTtLMq397gm"); 
+  })();
+
+  function sendEmail() {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+    
+    var templateParams = {
+      from_name: name,
+      from_email: email,
+      message_html: message
+    };
+    
+    emailjs.send('service_szcmfdi', 'template_4ssh5rh', templateParams)
+      .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+        alert('Your message has been sent!');
+      }, function(error) {
+        console.log('FAILED...', error);
+        alert('Your message could not be sent. Please try again later.');
+      });
+  }
+</script>
+
 
 </body>
 
