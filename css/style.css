@@ -1258,8 +1258,8 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  background: #d49af9 !important;
-  border-color: #d49af9 !important;
+  background: #000000 !important;
+  border-color: #e1aa72 !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
