@@ -554,7 +554,8 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   left: 0;
   right: 0;
   font-size: 250px;
-  color: #f0f0f0;
+  /*  color: #f0e4a488; */
+  color: rgba(231, 200, 167, 0.451);
   font-weight: 700;
 }
 @media screen and (max-width: 768px) {
@@ -580,7 +581,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   font-size: 12px;
   letter-spacing: 3px;
   margin-bottom: 10px;
-  color: #bfbfbf;
+  color: #808080;
   font-weight: 600;
 }
 
